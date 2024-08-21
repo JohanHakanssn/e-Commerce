@@ -1,0 +1,30 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.fileInput {
+	display: none;
+}
+.uploadButton {
+	border: 0;
+}
+
+.sec {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.div {
+	display: flex;
+	flex-direction: column;
+
+}

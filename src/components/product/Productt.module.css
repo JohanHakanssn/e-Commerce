@@ -1,0 +1,44 @@
+.wraper {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: 1200px;
+	flex-wrap: wrap;
+}
+
+.productContainer {
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 1rem;
+	background-color: #fff;
+	transition: transform 0.3s ease;
+}
+
+.productContainer:hover {
+	transform: scale(1.05);
+}
+
+.productContainer > img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.productContainer h1 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+.productContainer p {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #333;
+}

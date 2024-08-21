@@ -1,0 +1,220 @@
+.section {
+  height: 60vh;
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-radius: 0.4rem;
+  overflow: auto;
+  box-shadow: var(--box-shadow);
+}
+
+.item:nth-child(even) {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.item:nth-child(odd) {
+  background-color: var(--other_cart_color);
+  color: var(--text);
+}
+.item,
+.bg_Welcome {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0.4rem;
+  margin-block: 0.4rem;
+  box-shadow: var(--box-shadow);
+}
+.bg_Welcome {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--background);
+}
+.H_One {
+  font-size: 1.8rem;
+  margin-right: auto;
+}
+.item > h3 {
+  font-size: 1.4rem;
+  margin-right: auto;
+}
+.item > p {
+  font-weight: 600;
+  margin-inline: 0.4rem;
+}
+.paragraph {
+  text-align: center;
+  margin-block: 1rem;
+  font-weight: 700;
+}
+
+.CartBtn {
+  margin: 0.3rem;
+}
+
+.CartBtn,
+.CartClearBtn {
+  border-radius: 0.7rem;
+  border: none;
+  width: 6rem;
+  padding: 0.5rem;
+  font-size: large;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: var(--background);
+}
+.CartClearBtn {
+  width: -webkit-fill-available;
+  border-radius: 0.4rem;
+  background-color: var(--secondary);
+  color: var(--background);
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  margin: 1.5rem 0 -1rem 0;
+  box-shadow: var(--box-shadow);
+}
+.CheckoutBtn {
+  font-size: 1.4rem;
+  margin-block: 0.4rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  display: block;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.deleteItem {
+  border-radius: 0.4rem;
+  border: none;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 0.3rem;
+}
+
+.cartQuantity > p {
+  margin-left: 3rem;
+}
+.cartQuantity {
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  color: var(--background);
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+  }
+  .CartBtn {
+    flex-grow: 1;
+  }
+}
+
+/*''''''''''''Modal'''''''''''''''''*/
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modalContent h2 {
+  margin-top: 0;
+}
+
+.modalContent button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalContent button:hover {
+  background-color: #0056b3;
+}
+
+.checkoutForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: var(--secondary);
+  border-radius: 0.4rem;
+  color: var(--background);
+  font-weight: 700;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+  box-shadow: var(--box-shadow);
+}
+
+.formGroup > input {
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+}
+
+.formGroup > label {
+  margin-inline: 0.1rem;
+}
+
+.checkoutForm > h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--text);
+}
+
+@media screen and (max-width: 700px) {
+  .checkoutForm {
+    padding: 0.4rem;
+  }
+  .formGroup {
+    width: 100%;
+  }
+  .formGroup > input {
+    width: -webkit-fill-available;
+  }
+}
+
+.HiddenLogo {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .HiddenLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 0.6rem;
+  }
+}

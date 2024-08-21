@@ -1,0 +1,28 @@
+.selectProduct {
+	margin-block: 1rem;
+	margin-inline: 2.5%;
+	width: 95%;
+	max-width: 30rem;
+	border: 1px solid grey;
+	background-color: white;
+	padding-inline: 0.75rem;
+	padding-block: 0.5rem;
+	font-size: 1rem;
+}
+.h4 {
+	margin-block: 2rem;
+	margin-inline: 2rem;
+	/* padding-inline: 2rem; */
+}
+.selectedProductName {
+	margin-top: 3rem;
+	margin-inline: 2.5%;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: var(--primary);
+}
+@media screen and (min-width: 1080px){
+	.selectProduct {
+		max-width: 37.5%;
+	}
+}

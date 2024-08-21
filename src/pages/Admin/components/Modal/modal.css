@@ -1,0 +1,36 @@
+.modal-dialog {
+	max-width: 20rem;
+	padding: 2rem;
+	border: 0;
+	border-radius: 0.5rem;
+	position: relative;
+	margin: auto;
+	box-shadow: hsl(0 0% 0% / 10%) 0 0 0.5rem 0.25rem;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.modal::backdrop{
+	background-color: var(--primary);
+}
+
+.modal-title {
+	font-size: 1.5rem;
+	text-align: center;
+}
+.modal-button-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.modal-button {
+	border: 1px solid white;
+	background: var(--primary);
+	color: #ffffff;
+	font-size: 1.5rem;
+	padding-block: 0.25rem;
+	width: 40%;
+	border-radius: 0.5rem;
+}

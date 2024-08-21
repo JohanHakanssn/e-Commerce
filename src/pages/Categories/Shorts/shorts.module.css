@@ -1,0 +1,10 @@
+.wraper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.shoesPage {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}

@@ -1,0 +1,136 @@
+.footer {
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--background);
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+}
+
+.contact-info {
+  margin-bottom: 1.2rem;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+}
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  color: var(--background);
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.newsletter {
+  margin-bottom: 20px;
+}
+
+.newsletter h3 {
+  margin-bottom: 0.4rem;
+}
+
+.newsletter input[type="email"],
+.newsletter button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter input[type="email"] {
+  width: 70%;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  background-color: var(--text);
+  font-weight: 700;
+  color: var(--background);
+  cursor: pointer;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    transition: all 1s ease;
+  }
+  .social-media a {
+    font-size: 1.2rem;
+  }
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .newsletter button {
+    width: 100%;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  color: var(--primary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modalContent h2 {
+  margin-top: 0;
+}
+
+.modalContent button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalContent button:hover {
+  background-color: var(--primary);
+}

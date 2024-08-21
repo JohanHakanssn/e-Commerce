@@ -1,0 +1,54 @@
+/* Huvudsektion */
+.productSection {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	margin-block: 2.5%;
+	margin-inline: 2.5%;
+	overflow-x: hidden;
+
+}
+
+/* Huvudrubrik */
+.h4 {
+	margin-block: 1rem;
+	padding-inline: 2rem;
+}
+
+/* Container för formulär */
+.inputSection {
+	width: 100%;
+	max-width: 30rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+
+}
+@media screen and (min-width: 1080px){
+	.inputSection {
+		max-width: 80%;
+		flex-direction: row;
+	}
+}
+
+.submitButton {
+	margin-block: 2rem;
+	font-size: 1.3rem;
+	padding-inline: 1rem;
+	padding-block: 0.75rem;
+	width: 60%;
+	max-width: 30rem;
+	background-color: var(--secondary);
+	border: 1px solid #000000;
+}
+.deleteButton {
+	margin-block: 2rem;
+	font-size: 1.3rem;
+	padding-inline: 1rem;
+	padding-block: 0.75rem;
+	width: 60%;
+	max-width: 30rem;
+	background-color: rgb(255, 199, 199);
+	border: 1px solid #000000;
+}

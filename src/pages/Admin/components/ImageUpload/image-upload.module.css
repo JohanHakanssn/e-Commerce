@@ -1,0 +1,123 @@
+/* File upload */
+.imgDiv {
+	margin-top: 2rem;
+	padding-block: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color:rgb(221, 239, 255);
+	overflow-y: auto;
+}
+.h4 {
+	margin-block: 1rem;
+	padding-inline: 2rem;
+}
+.pUploadDirections {
+	margin-inline: 1rem;
+	font-size: 0.8rem;
+}
+.fileInput {
+	margin-top: 1rem;
+	padding-inline: 0.5rem;
+	padding-block: 0.5rem;
+	font-size: 1.5rem;
+	opacity: 0;
+}
+.label {
+	display: flex;
+	flex-direction: row;
+}
+.pError {
+	font-size: 0.6rem;
+	color: red;
+}
+.uploadLink {
+	margin-block: 0.5rem;
+	margin-inline: 1rem;
+	border: 1px solid grey;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	background-color: var(--secondary);
+	color: white;
+	text-align: center;
+}
+.previewButton {
+	margin-block: 0.5rem;
+	margin-inline: 1rem;
+	border: 1px solid grey;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	background-color: var(--secondary);
+	color: white;
+	font-size: 1rem;
+}
+
+.imgUl {
+	margin-inline: 1rem;
+	margin-block: 1rem;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.showPreviews {
+	width: 100%;
+	text-align: center;
+}
+
+.submitButton {
+	margin-block: 2rem;
+	font-size: 1.3rem;
+	padding-inline: 1rem;
+	padding-block: 0.75rem;
+	width: 60%;
+	max-width: 30rem;
+	background-color: var(--secondary);
+}
+.previewImg {
+	width: 100px;
+}
+.previewImgLi {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.75rem;
+}
+.previemFileName {
+	display: flex;
+	flex-direction: column;
+}
+.imageErrors {
+	color: red;
+	font-size: 0.7rem;
+	text-align: center;
+}
+.buttonsDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+.deleteButton {
+	width: 5rem;
+	height: 1.5rem;
+	border: 1px solid grey;
+
+}
+.arrowButton {
+	height: 1.5rem;
+	width: 1.5rem;
+	border: 1px solid grey;
+}
+.previewFileName {
+	font-size: 0.7rem;
+}
+.pUploadedCount {
+	margin-block: 1rem;
+	text-align: center;
+}
+
+.invalid {
+	background-color: rgb(255, 154, 154);
+	color: rgb(255, 154, 154);
+}

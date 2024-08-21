@@ -1,0 +1,58 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  width: 100%;
+}
+
+.NavBar h3 {
+  color: var(--background);
+  margin-right: auto;
+}
+
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+}
+
+.link {
+  color: var(--background);
+  padding: 1rem;
+}
+
+.linkCategories {
+  color: black;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navDropdown {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .wraper {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 620px) {
+  .wraper {
+    justify-content: center;
+  }
+  h3 {
+    display: none;
+  }
+  .NavBar {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+}
